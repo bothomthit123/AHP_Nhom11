@@ -6,8 +6,8 @@ This project implements a decision support system using the Analytic Hierarchy P
 
 The project is divided into two main components:
 
-- **Frontend**: React-based web application (`ahp-frontend/`)
-- **Backend**: FastAPI-based REST API service (`ahp-backend/`)
+- **Frontend**: React-based web application ([`ahp-frontend/`](./ahp-frontend/))
+- **Backend**: FastAPI-based REST API service ([`ahp-backend/`](./ahp-backend/))
 
 ## Features
 

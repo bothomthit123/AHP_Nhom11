@@ -1,0 +1,151 @@
+.criteria-form {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.criteria-form h2 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.matrix-table-container {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+.matrix-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.matrix-table th,
+.matrix-table td {
+  padding: 8px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.matrix-table th {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+.matrix-table input {
+  width: 60px;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.matrix-table input.invalid {
+  border-color: #dc3545;
+  background-color: #f8d7da;
+}
+
+.validation-message {
+  color: #dc3545;
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+}
+
+.validation-summary {
+  margin: 1rem 0;
+  padding: 10px 15px;
+  background-color: #f8d7da;
+  border: 1px solid #dc3545;
+  border-radius: 4px;
+}
+
+.validation-error {
+  color: #dc3545;
+  margin: 0;
+  font-weight: bold;
+}
+
+.diagonal-cell {
+  background-color: #e9ecef;
+}
+
+.criteria-name {
+  font-weight: bold;
+  background-color: #f0f0f0;
+}
+
+.calculate-button {
+  padding: 10px 20px;
+  background-color: #4285f4;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s;
+}
+
+.calculate-button:hover {
+  background-color: #3367d6;
+}
+
+.calculate-button:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+.criteria-form-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+.back-button {
+  padding: 10px 20px;
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s;
+}
+
+.back-button:hover {
+  background-color: #5a6268;
+}
+
+.changes-warning {
+  margin-top: 1rem;
+  padding: 10px;
+  background-color: #fff3cd;
+  color: #856404;
+  border-radius: 4px;
+  border-left: 4px solid #ffc107;
+}
+
+.input-instructions {
+  margin-bottom: 1.5rem;
+  padding: 15px;
+  background-color: #f5f5f5;
+  border-left: 4px solid #4285f4;
+  border-radius: 4px;
+}
+
+.input-instructions h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.input-instructions ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.input-instructions li {
+  margin-bottom: 5px;
+}

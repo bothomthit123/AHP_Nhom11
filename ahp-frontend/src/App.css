@@ -1,0 +1,201 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.app-header {
+  margin-bottom: 2rem;
+  text-align: center;
+  background-color: white;
+  min-height: auto;
+  color: black;
+  padding: 1rem 0;
+}
+
+.app-header h1 {
+  color: #333;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.app-content {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+.loading-indicator {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.error-message {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.progress-indicator {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.progress-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+}
+
+.step-number {
+  width: 36px;
+  height: 36px;
+  background-color: #e9ecef;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #6c757d;
+  margin-bottom: 8px;
+}
+
+.step-name {
+  font-size: 0.9rem;
+  color: #6c757d;
+  text-align: center;
+  max-width: 100px;
+}
+
+.progress-step.active .step-number {
+  background-color: #4285f4;
+  color: white;
+}
+
+.progress-step.active .step-name {
+  color: #4285f4;
+  font-weight: bold;
+}
+
+.progress-step.completed .step-number {
+  background-color: #28a745;
+  color: white;
+}
+
+.progress-line {
+  flex-grow: 1;
+  height: 3px;
+  background-color: #e9ecef;
+  margin: 0 8px;
+  position: relative;
+  top: -18px;
+}
+
+.progress-line.completed {
+  background-color: #28a745;
+}
+
+.restart-container {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.restart-button {
+  padding: 10px 20px;
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s;
+}
+
+.restart-button:hover {
+  background-color: #5a6268;
+}
+
+@media (max-width: 768px) {
+  .app-container {
+    padding: 1rem;
+  }
+  
+  .app-content {
+    padding: 1rem;
+  }
+  
+  .app-header h1 {
+    font-size: 1.5rem;
+  }
+  
+  .progress-indicator {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .progress-line {
+    display: none;
+  }
+  
+  .progress-step {
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+  
+  .step-number {
+    margin-bottom: 0;
+  }
+}

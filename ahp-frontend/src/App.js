@@ -267,6 +267,7 @@ const App = () => {
           <>
             <Results 
               data={results}
+              criteriaData={criteriaData}
               onNavigateBack={() => handleNavigateBack('alternative-comparison')}
             />
             <div className="restart-container">
